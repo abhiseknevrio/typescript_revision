@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Greet, Person, PersonList } from './components/props';
+import { Greet, Heading, Oscar, Person, PersonList, Status } from './components/props';
 
 function App() {
 
@@ -31,6 +31,11 @@ function App() {
         <Greet name='Abhisek' isLoggedIn={true} />
         <Person name={personName} />
         <PersonList names={nameList} />
+        <Status status='loading' />
+        <Heading>Placeholder text</Heading>
+        <Oscar>
+          <Heading>Oscar goes to Dicaprio</Heading>
+        </Oscar>
       </header>
     </div>
   );
